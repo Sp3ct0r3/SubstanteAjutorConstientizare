@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Minte Clară: informații verificate despre consumul de substanțe, prevenție, semne ale consumului problematic și accesul la ajutor. Nu înlocuiește evaluarea medicală." />
+  <title>Minte Clară</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='46' fill='%231e3a5f'/%3E%3Ctext x='50' y='66' font-size='52' text-anchor='middle' fill='white' font-family='Georgia'%3EMC%3C/text%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#principal">Mergi la conținut</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#/" aria-label="Minte Clară, pagina principală">
+        <span class="logo-word">Minte <span class="logo-accent">Clară</span></span>
+        <span class="logo-tag">Înțelege. Previne. Cere ajutor.</span>
+      </a>
+      <nav class="main-nav" aria-label="Navigare principală">
+        <a href="#/substante" data-route="substante">Substanțe</a>
+        <a href="#/studii" data-route="studii">Studii</a>
+        <a href="#/ajutor" data-route="ajutor">Găsește ajutor</a>
+        <a href="#/schimb" data-route="schimb">Vreau să schimb ceva</a>
+        <a href="#/familie" data-route="familie">Familie și prieteni</a>
+        <a href="#/educatie" data-route="educatie">Educație</a>
+        <a href="#/intreaba" data-route="intreaba">Întreabă în siguranță</a>
+        <a href="#/despre" data-route="despre">Despre</a>
+      </nav>
+      <a class="btn btn-emergency btn-sm" href="tel:112" aria-label="Sună 112, numărul de urgență">Urgență: 112</a>
+    </div>
+  </header>
+
+  <main id="principal" class="container page" tabindex="-1">
+    <div class="loader" role="status" aria-live="polite">Se încarcă…</div>
+    <div id="app"></div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p><strong>Important:</strong> informațiile din această aplicație au scop educațional și nu înlocuiesc evaluarea, diagnosticul sau tratamentul unui medic sau psiholog. În urgență sună <a href="tel:112">112</a>.</p>
+      <p class="muted">Data ultimei actualizări a conținutului: <span id="dataVerificare"></span>. <a href="#/despre">Despre aplicație, surse și confidențialitate</a>.</p>
+    </div>
+  </footer>
+
+  <!-- Date (scripturi clasice, funcționează și deschise direct din fișier) -->
+  <script src="data/site.js"></script>
+  <script src="data/substances.js"></script>
+  <script src="data/studies.js"></script>
+  <script src="data/services.js"></script>
+  <script src="data/quizzes.js"></script>
+  <!-- Aplicația -->
+  <script src="js/app.js"></script>
+</body>
+</html>
